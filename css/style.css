@@ -18189,6 +18189,8 @@ textarea.form-control.is-invalid {
 
 .slideshow-bg {
   height: 100%;
+  background-size: cover !important;
+  background-position: center;
 }
 
 .slideshow-bg__img {
