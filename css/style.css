@@ -12067,7 +12067,7 @@ img {
   left: 1.5625rem;
   width: 0;
   height: 2px;
-  background-color: #010101;
+  background-color: #368f26;
   transition: width 0.36s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 @media (prefers-reduced-motion: reduce) {
@@ -12083,6 +12083,7 @@ img {
 .nav-link_underscore.active,
 .nav-item.show .nav-link_underscore {
   color: #368f26;
+  font-weight: bold;
 }
 .nav-link_underscore:hover:after,
 .nav-link_underscore:focus:after,
@@ -13394,7 +13395,8 @@ fieldset:disabled .btn {
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #101938;
+  color: #368f26;
+  font-weight: bold;
 }
 .btn-link:disabled,
 .btn-link.disabled {
