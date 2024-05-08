@@ -775,12 +775,13 @@
                         <!-- /.shop-acs -->
                     </div>
                     <div class="product-single__rating">
-                        <span class="reviews-note text-lowercase text-secondary ms-1">John Doe's store</span>
+                        <span class="reviews-note  text-secondary ms-1 prod-store">Oluwatoyin's store</span> <span class="reviews-note text-secondary ms-1"><span class="fw-bold">Location:</span> <span style="color: #370d8a" class="fw-bold">Lagos</span></span>
                     </div>
-                    <h1 class="product-single__name">
+                    <h1 class="product-single__name prod-name my-0">
                         Lightweight Puffer Jacket With a Hood
                     </h1>
-                    <div class="product-single__rating">
+                    <div class="product-single__rating mt-3">
+                        <span style="border: 1.5px solid #e4e4e4; padding: 10px 30px; border-radius: 30px; background-color: #f2f2f2;">Brand New</span>
                         <div class="reviews-group d-flex">
                             <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg">
                                 <use href="#icon_star" />
@@ -800,13 +801,13 @@
                         </div>
                         <span class="reviews-note text-lowercase text-secondary ms-1">8k+ reviews</span>
 
-                        <span class="reviews-note text-secondary ms-1">Location: Lagos</span>
+                        
                     </div>
                     <div class="product-single__price">
-                        <span class="current-price" style="color: #368f26"> ₦449</span>
+                        <span class="current-price prod-price" style="color: #368f26"> ₦449</span>
                     </div>
                     <div class="product-single__short-desc">
-                        <p>
+                        <p class="fs-18">
                             Phasellus sed volutpat orci. Fusce eget lore mauris vehicula
                             elementum gravida nec dui. Aenean aliquam varius ipsum, non
                             ultricies tellus sodales eu. Donec dignissim viverra nunc, ut
@@ -830,7 +831,7 @@
                             </button>
                         </div>
                     </form>
-                    <div class="mb-4">
+                    <div class="mb-4 d-flex flex-wrap gap-3">
                         <button type="submit" class="btn" id="showContactBtn" data-aside="cartDrawer" style="
                               display: flex;
                               align-items: center;
@@ -841,6 +842,13 @@
                             <span style="color: #000">Show Contact</span>
                             <span style="display: none" id="contactInfo">+2349160258105</span>
                         </button>
+
+                        <button type="submit" class="btn"   style=" 
+                        background-color: #368f26;
+                        border: 1px solid #368f26; 
+                      ">
+                      <span style="color: #fff">Chat Contact</span> 
+                  </button>
                     </div>
                     <div class="product-single__addtolinks">
                         <a href="product1_simple.html#" class="menu-link menu-link_us-s add-to-wishlist"><svg width="16"
@@ -900,19 +908,19 @@
                     </div>
                 </div>
             </div>
-            <div class="product-single__details-tab">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
+            <div class="product-single__details-tab" style="margin: 2.25rem auto 2.375rem !important;">
+                <ul class="nav nav-tabs text-center" id="myTab" role="tablist">
+                    <li class="nav-item d-flex align-items-center justify-content-center" style="text-align: center !important;" role="presentation">
                         <a class="nav-link nav-link_underscore active" id="tab-description-tab" data-bs-toggle="tab"
                             href="product1_simple.html#tab-description" role="tab" aria-controls="tab-description"
                             aria-selected="true">Description</a>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item d-flex align-items-center justify-content-center" role="presentation">
                         <a class="nav-link nav-link_underscore" id="tab-additional-info-tab" data-bs-toggle="tab"
                             href="product1_simple.html#tab-additional-info" role="tab"
                             aria-controls="tab-additional-info" aria-selected="false">Additional Information</a>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item d-flex align-items-center justify-content-center" role="presentation">
                         <a class="nav-link nav-link_underscore" id="tab-reviews-tab" data-bs-toggle="tab"
                             href="product1_simple.html#tab-reviews" role="tab" aria-controls="tab-reviews"
                             aria-selected="false">Reviews (2)</a>
@@ -922,10 +930,10 @@
                     <div class="tab-pane fade show active" id="tab-description" role="tabpanel"
                         aria-labelledby="tab-description-tab">
                         <div class="product-single__description">
-                            <h3 class="block-title mb-4">
+                            <h3 class="block-title mb-4 prod-text">
                                 Sed do eiusmod tempor incididunt ut labore
                             </h3>
-                            <p class="content">
+                            <p class="content prod-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -941,8 +949,8 @@
                             </p>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <h3 class="block-title">Why choose product?</h3>
-                                    <ul class="list text-list">
+                                    <h3 class="block-title prod-text">Why choose product?</h3>
+                                    <ul class="list text-list prod-text">
                                         <li>Creat by cotton fibric with soft and smooth</li>
                                         <li>
                                             Simple, Configurable (e.g. size, color, etc.), bundled
@@ -951,8 +959,8 @@
                                     </ul>
                                 </div>
                                 <div class="col-lg-6">
-                                    <h3 class="block-title">Sample Number List</h3>
-                                    <ol class="list text-list">
+                                    <h3 class="block-title prod-text">Sample Number List</h3>
+                                    <ol class="list text-list prod-text">
                                         <li>Create Store-specific attrittbutes on the fly</li>
                                         <li>
                                             Simple, Configurable (e.g. size, color, etc.), bundled
@@ -961,8 +969,8 @@
                                     </ol>
                                 </div>
                             </div>
-                            <h3 class="block-title mb-0">Lining</h3>
-                            <p class="content">100% Polyester, Main: 100% Polyester.</p>
+                            <h3 class="block-title mb-0 prod-text">Lining</h3>
+                            <p class="content prod-text">100% Polyester, Main: 100% Polyester.</p>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tab-additional-info" role="tabpanel"
