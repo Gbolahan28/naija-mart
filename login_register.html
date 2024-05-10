@@ -97,9 +97,12 @@
                         <div class="pb-3"></div>
 
                         <div class="form-floating mb-3">
-                            <input name="login_password" type="password" class="form-control form-control_gray"
-                                id="customerPasswodInput" placeholder="Password *" required />
+                            <input name="login_password" type="password" class="form-control form-control_gray" style="padding-right: 40px;"
+                                id="customerLoginPassword" placeholder="Password *" required />
                             <label for="customerPasswodInput">Password *</label>
+                            <div class="password-btn" style="position: absolute; top: 20px; right: 10px;">
+                            <button id="showLoginPassword" type="button" style="background-color: transparent; border: none; outline: none; text-decoration: underline;">Show</button>
+                        <button id="hideLoginPassword" class="d-none" type="button" style="background-color: transparent; border: none; outline: none; text-decoration: underline;">Hide</button></div>
                         </div>
 
                         <div class="d-flex align-items-center mb-3 pb-2">
@@ -134,7 +137,22 @@
             </div>
             <div class="tab-pane" id="tab-item-register" role="tabpanel" aria-labelledby="register-tab">
                 <div class="register-form">
+
                     <form name="register-form" class="needs-validation" novalidate>
+                        <div class="mb-3 text-center radio-container">
+                            <h5>Choose account role *</h5>
+                            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                                <label class="radio-input-box mx-2">
+                                    <input type="radio" name="option" value="seller" checked> <span class="checkmark"></span> Seller/Service Provider
+                                  </label> 
+                                  <label class="radio-input-box mx-2">
+                                    <input type="radio" name="option" value="buyer"> <span class="checkmark"></span> Buyer/Customer
+                                  </label> 
+                                  <label class="radio-input-box mx-2">
+                                    <input type="radio" name="option" value="partner"> <span class="checkmark"></span> Partner/Affiliate
+                                  </label> 
+                            </div>
+                        </div>
                         <div class="form-floating mb-3">
                             <input name="register_firstname" type="text" class="form-control form-control_gray"
                                 id="customerFirstNameRegisterInput" placeholder="Firstname *" required />
@@ -151,10 +169,13 @@
 
                         <div class="pb-3"></div>
 
-                        <div class="form-floating mb-3">
-                            <input name="register_username" type="text" class="form-control form-control_gray"
-                                id="customerNameRegisterInput" placeholder="Username *" />
-                            <label for="customerNameRegisterInput">Username</label>
+                        <div class="d-flex mb-3">
+                            <div class="p-3 d-flex justify-content-center align-items-center" style="background-color: #368f26; color: #fff; font-weight: bold; font-size: 14px;">+234</div>
+                            <div class="form-floating flex-grow-1">
+                                <input name="register_phone_number" type="tel" class="form-control form-control_gray"
+                                    id="customerPhoneNumberRegisterInput" placeholder="Phone Number *" />
+                                <label for="customerNameRegisterInput">Phone Number *</label>
+                            </div>
                         </div>
 
                         <div class="pb-3"></div>
@@ -165,13 +186,17 @@
                             <label for="customerEmailRegisterInput">Email address *</label>
                         </div>
 
-                        <div class="pb-3"></div>
+                        <div class="pb-3"></div> 
 
                         <div class="form-floating mb-3">
-                            <input name="register_password" type="password" class="form-control form-control_gray"
-                                id="customerPasswodRegisterInput" placeholder="Password *" required />
+                            <input name="register_password" type="password" class="form-control form-control_gray" style="padding-right: 40px;"
+                                id="customerPasswordRegisterInput" placeholder="Password *" required />
                             <label for="customerPasswodRegisterInput">Password *</label>
+                            <div class="password-btn" style="position: absolute; top: 20px; right: 10px;">
+                            <button id="showRegisterPassword" type="button" style="background-color: transparent; border: none; outline: none; text-decoration: underline;">Show</button>
+                        <button id="hideRegisterPassword" class="d-none" type="button" style="background-color: transparent; border: none; outline: none; text-decoration: underline;">Hide</button></div>
                         </div>
+
 
                         <div class="d-flex align-items-center mb-3 pb-2">
                             <p class="m-0">
@@ -445,6 +470,51 @@
 </footer>
 <!-- /.footer-mobile container position-fixed d-md-none bottom-0 -->
 
+<script>
+
+
+// REGISTER 
+// SHOW BUTTON ONCLICK EVENTLISTENER 
+document.getElementById('showRegisterPassword').addEventListener('click', function() {
+    // this change the type attribute to text when the show button is clicked
+    document.getElementById('customerPasswordRegisterInput').setAttribute('type', 'text');
+
+    // this hides the show button and pops up the hide button when the password is visible
+    document.getElementById("showRegisterPassword").classList.add("d-none")
+    document.getElementById("hideRegisterPassword").classList.remove("d-none")
+});
+
+document.getElementById('hideRegisterPassword').addEventListener('click', function() {
+    // this changes the type attribute to password when the hide button is clicked
+    document.getElementById('customerPasswordRegisterInput').setAttribute('type', 'password');
+
+    // this hides the hide button and pops up the show button when the password is hidden
+    document.getElementById("hideRegisterPassword").classList.add("d-none")
+    document.getElementById("showRegisterPassword").classList.remove("d-none")
+});
+
+
+    // LOGIN 
+    // SHOW BUTTON EVENTLISTENER 
+    document.getElementById('showLoginPassword').addEventListener('click', function() {
+        // this change the type attribute to text when the show button is clicked
+    document.getElementById('customerLoginPassword').setAttribute('type', 'text');
+
+    // this hides the show button and pops up the hide button when the password is visible
+    document.getElementById("showLoginPassword").classList.add("d-none")
+    document.getElementById("hideLoginPassword").classList.remove("d-none")
+});
+
+document.getElementById('hideLoginPassword').addEventListener('click', function() {
+     // this changes the type attribute to password when the hide button is clicked
+    document.getElementById('customerLoginPassword').setAttribute('type', 'password');
+
+     // this hides the hide button and pops up the show button when the password is hidden
+    document.getElementById("hideLoginPassword").classList.add("d-none")
+    document.getElementById("showLoginPassword").classList.remove("d-none")
+});
+ 
+</script>
 
     <script src="js/plugins/jquery.min.js"></script>
     <script src="js/plugins/bootstrap.bundle.min.js"></script>
