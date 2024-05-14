@@ -20201,6 +20201,11 @@ textarea.form-control.is-invalid {
   transition: all 0.3s ease;
   white-space: nowrap;
 }
+
+  .product-single__details-tab > .tab-content {
+    padding: 1.125rem 0 !important;
+  }
+  
 .product-single__type-7 .product-single__details > a:before {
   content: "";
   display: block;
