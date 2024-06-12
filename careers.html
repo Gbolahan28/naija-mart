@@ -754,6 +754,18 @@
                                             <li>Monthly team bonding activities</li>
                                         </ul>
                                     </div>
+
+                                    <div>
+                                        <button class="btn-sm fw-medium px-4"  data-bs-toggle="modal"
+                                        data-bs-target="#apply-modal" style="
+                                        border-radius: 5px;
+                                        background-color: #368f26;
+                                        border: 1px solid #368f26;
+                                        color: #fff;
+                                      " type="button">
+                                              Apply Now
+                                          </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -780,11 +792,11 @@
         <!-- /.container -->
     </section>
                 <div class="mt-5"></div>
-                <a href="">
+                <!-- <a href="">
                 <h2 class="section-title fw-normal text-center mb-3 pb-xl-3 mb-xl-4">
                     Apply Now
                 </h2>
-                </a>
+                </a> -->
 
     
 </main>
@@ -1247,6 +1259,78 @@
         <!-- /.aside-content -->
     </div>
     <!-- /.aside -->
+
+
+  <!-- Apply modal  -->
+  <div class="modal fade" id="apply-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-lg-3">
+        <div class="d-flex justify-content-end">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="product-single p-3">
+          <div class="product-single__detail">
+            <h1 class="product-single__name">POSITION: Seller acquisition agent</h1>
+
+            <div class="product-single__short-desc">
+              <p>Fill the form below to proceed with your application.</p>
+            </div>
+            <form name="addtocart-form" method="post">
+              <div class="mb-3">
+                <input
+                  class="form-control border-2"
+                  type="text"
+                  name="Full Name"
+                  placeholder="Enter your full name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  class="form-control border-2"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  class="form-control border-2"
+                  type="tel"
+                  name="phone number"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              <div class="mb-3">
+                <p style="font-size: 11px; margin-bottom: 2px;">Upload your CV/Resume</p>
+                <input
+                  class="form-control border-2"
+                  type="file"
+                  name="CV"
+                  placeholder="Upload your cv"
+                />
+              </div>
+
+              <div class="product-single__addtocart mt-4">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-addtocart"
+                  style="width: 100% !important" 
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
 
     <!-- Sitemap -->
     <div class="modal fade" id="siteMap" tabindex="-1">

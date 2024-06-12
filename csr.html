@@ -2231,18 +2231,65 @@
     <!-- /.sitemap position-fixed w-100 -->
 
     <div class="modal fade" id="quickView" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="d-flex justify-content-end align-items-center">
                     <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="p-3">
+                    <div class="mb-2 d-flex p-1 col-lg-6 mx-auto"  style="border: 1px solid #33333320;">
+                        <button onclick="changeActiveTab('image')" id="image-tab-button" class="bg-black text-white" style="width: 50%; padding: 10px 10px; border: none; transition: all 0.3s ease-in-out;">Images</button>
+                        <button onclick="changeActiveTab('video')" id="video-tab-button" class="" style="width: 50%; padding: 10px 10px; border: none; transition: all 0.3s ease-in-out;">Videos</button>
+                    </div>
                     <div>
-                        <iframe style="width: 100%" height="405"
+
+                        <div id="image-section" class="row mb-2">
+                            <div class="col-lg-4">
+                                <div style="height: 405px; width: 100%; background-color: #ccc;">
+                                    <img src="" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div style="height: 405px; width: 100%; background-color: #ccc;">
+                                    <img src="" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div style="height: 405px; width: 100%; background-color: #ccc;">
+                                    <img src="" alt="image">
+                                </div>
+                            </div>
+                        </div>
+
+
+                       <div id="video-section" class="row d-none">
+                        <div class="col-lg-4">
+                            <iframe style="width: 100%" height="405"
                             src="https://www.youtube.com/embed/0cNf1mciaKc?si=W4mcZIMN-zhwLSfH"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4">
+                            <iframe style="width: 100%" height="405"
+                            src="https://www.youtube.com/embed/0cNf1mciaKc?si=W4mcZIMN-zhwLSfH"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4">
+                            <iframe style="width: 100%" height="405"
+                            src="https://www.youtube.com/embed/0cNf1mciaKc?si=W4mcZIMN-zhwLSfH"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                       </div>
+                    </div>
+
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, accusantium modi! Aut doloremque harum aperiam ad voluptas quae, molestiae cumque quod dolorem sit explicabo! Pariatur itaque eos harum ullam perspiciatis.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, odit obcaecati, doloribus voluptas quasi ea vero cupiditate, alias repellat fugit esse. Itaque asperiores fuga ex consectetur saepe, natus nostrum, repellat velit eius, dolorum laborum? Quod exercitationem nemo commodi est possimus assumenda natus nobis distinctio error nulla, quos modi, inventore magni voluptatibus in porro delectus obcaecati officia sapiente, velit consequuntur. Recusandae, illo. Blanditiis sed doloribus dolorem debitis repellat commodi ab maiores.</p>
                     </div>
                 </div>
             </div>
@@ -2256,6 +2303,30 @@
     <!-- Page Overlay -->
     <div class="page-overlay"></div>
     <!-- /.page-overlay -->
+
+    <script>
+        const IMAGE_SECTION = document.getElementById("image-section")
+        const VIDEO_SECTION = document.getElementById("video-section")
+        const IMAGE_TAB_BTN = document.getElementById("image-tab-button")
+        const VIDEO_TAB_BTN = document.getElementById("video-tab-button")
+
+        console.log(IMAGE_TAB_BTN, VIDEO_TAB_BTN)
+
+        function changeActiveTab(type) {
+            if (type === "image") {
+                VIDEO_SECTION.classList.add("d-none")
+                IMAGE_SECTION.classList.remove("d-none")
+                IMAGE_TAB_BTN.classList.add("bg-black", "text-white")
+                VIDEO_TAB_BTN.classList.remove("bg-black", "text-white")
+                
+            } else if (type === "video") {
+                VIDEO_SECTION.classList.remove("d-none")
+                IMAGE_SECTION.classList.add("d-none")
+                IMAGE_TAB_BTN.classList.remove("bg-black", "text-white")
+                VIDEO_TAB_BTN.classList.add("bg-black", "text-white")
+            }
+        }
+    </script>
 
     <!-- External JavaScripts -->
     <script src="js/plugins/jquery.min.js"></script>
