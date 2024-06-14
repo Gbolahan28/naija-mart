@@ -67,6 +67,11 @@
   flex: 1;
 }
 
+.accordion-button{
+  font-weight: bold;
+  color: #368f26;
+}
+
 .title-benefit {
   text-transform: uppercase;
   padding: 0.1em 0;
