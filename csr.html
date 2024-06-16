@@ -7,6 +7,10 @@
 
     <link rel="shortcut icon" href="../assets/new/Favicon NaijaMart.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
 
     <!-- Fonts -->
     <link
@@ -19,6 +23,11 @@
     <link rel="stylesheet" href="css/plugins/swiper.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/csr.css" type="text/css" />
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+   />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lt IE 9]>
@@ -27,6 +36,40 @@
 
     <!-- Document Title -->
     <title>CSR - Naija mart</title>
+    <style>
+ 
+
+      .video-section .swiper-button-nextt, .image-section .swiper-button-next2 {
+        background: #368f26;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: rgb(46, 67, 78);
+      }
+
+      .video-section .swiper-button-prevv, .image-section .swiper-button-prev2 {
+        background: #fff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid rgba(46, 67, 78, 0.5);
+        color: #368f26;
+      }
+
+      .video-section .swiper-button-disabled, .image-section .swiper-button-disabled {
+        opacity: 0.5;
+      }
+
+      .video-section
+        .swiper-pagination-progressbar
+        .swiper-pagination-progressbar-fill, .image-section
+        .swiper-pagination-progressbar
+        .swiper-pagination-progressbar-fill {
+        background-color: #368f26;
+      }
+    </style>
 </head>
 
 <body>
@@ -940,8 +983,7 @@
 
         <div class="mb-4 mb-xl-5 pt-1 pb-5"></div>
 
-
-
+ 
         <div class="pb-5 pt-3"></div>
 
     <section class="products-carousel container">
@@ -2243,47 +2285,210 @@
                     </div>
                     <div>
 
-                        <div id="image-section" class="row mb-2">
-                            <div class="col-lg-4">
-                                <div style="height: 405px; width: 100%; background-color: #ccc;">
-                                    <img src="" alt="image">
+                        <div id="image-section" class="row mb-2 image-section">
+                            <div class="swiper mySwiper px-2 mb-3">
+                                <div class="mb-2 row gx-5"> 
+                                  <div
+                                    class=" mt-3 d-flex"
+                                    style="position: relative; height: 60px"
+                                  >
+                                  
+                                    <div
+                                      class="d-flex me-md-5 me-4 gap-3"
+                                      style="position: absolute; top: 0; right: 0"
+                                    >
+                                      <div
+                                        class="swiper-button-prev2 d-flex justify-content-center align-items-center"
+                                      >
+                                        <span>
+                                          <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        </span>
+                                      </div>
+                                      <div
+                                        class="swiper-button-next2 d-flex justify-content-center align-items-center"
+                                      >
+                                        <span>
+                                          <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        </span>
+                                      </div>
+                                    </div>
+                                    
+                                   
+                                  </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div style="height: 405px; width: 100%; background-color: #ccc;">
-                                    <img src="" alt="image">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <div
+                                      class="card border-0 h-100 my-zoom"
+                                      style="border-radius: 10px !important"
+                                    >
+                                    <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div
+                                      class="card border-0 h-100 my-zoom"
+                                      style="border-radius: 10px !important"
+                                    >
+                                    <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div
+                                      class="card border-0 h-100 my-zoom"
+                                      style="border-radius: 10px !important"
+                                    >
+                                     <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div
+                                      class="card border-0 h-100 my-zoom"
+                                      style="border-radius: 10px !important"
+                                    >
+                                    <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                    </div>
+                                  </div>
+                                   <div class="swiper-slide">
+                                    <div
+                                      class="card border-0 h-100 my-zoom"
+                                      style="border-radius: 10px !important"
+                                    >
+                                    <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                    </div>
+                                  </div>
+                                   <div class="swiper-slide">
+                                    <div
+                                      class="card border-0 h-100 my-zoom"
+                                      style="border-radius: 10px !important"
+                                    >
+                                    <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                    </div>
+                                  </div>
+                                   <div class="swiper-slide">
+                                    <div
+                                      class="card border-0 h-100 my-zoom"
+                                      style="border-radius: 10px !important"
+                                    >
+                                    <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                    </div>
+                                  </div>
+                                   <div class="swiper-slide">
+                                    <div
+                                      class="card border-0 h-100 my-zoom"
+                                      style="border-radius: 10px !important"
+                                    >
+                                    <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                    </div>
+                                  </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div style="height: 405px; width: 100%; background-color: #ccc;">
-                                    <img src="" alt="image">
-                                </div>
-                            </div>
+ 
+                              </div>
                         </div>
 
 
-                       <div id="video-section" class="row d-none">
-                        <div class="col-lg-4">
-                            <iframe style="width: 100%" height="405"
-                            src="https://www.youtube.com/embed/0cNf1mciaKc?si=W4mcZIMN-zhwLSfH"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-4">
-                            <iframe style="width: 100%" height="405"
-                            src="https://www.youtube.com/embed/0cNf1mciaKc?si=W4mcZIMN-zhwLSfH"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-lg-4">
-                            <iframe style="width: 100%" height="405"
-                            src="https://www.youtube.com/embed/0cNf1mciaKc?si=W4mcZIMN-zhwLSfH"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
+                       <div id="video-section" class="row d-none video-section">
+                        <div class="swiper mySwiper2 px-2 mb-3">
+                            <div class="mb-2 row gx-5"> 
+                              <div
+                                class="col-lg-12 mt-3 d-flex"
+                                style="position: relative; height: 60px"
+                              >
+                                <div
+                                  class="d-flex me-md-5 me-4 gap-3"
+                                  style="position: absolute; top: 0; right: 0"
+                                >
+                                  <div
+                                    class="swiper-button-prevv d-flex justify-content-center align-items-center"
+                                  >
+                                    <span>
+                                      <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                    </span>
+                                  </div>
+                                  <div
+                                    class="swiper-button-nextt d-flex justify-content-center align-items-center"
+                                  >
+                                    <span>
+                                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                    </span>
+                                  </div>
+                                </div>
+                                <!-- <div class="swiper-pagination swiper-line"></div> -->
+                              </div>
+                            </div>
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div
+                                  class="card border-0 h-100 my-zoom"
+                                  style="border-radius: 10px !important"
+                                >
+                                <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div
+                                  class="card border-0 h-100 my-zoom"
+                                  style="border-radius: 10px !important"
+                                >
+                                <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div
+                                  class="card border-0 h-100 my-zoom"
+                                  style="border-radius: 10px !important"
+                                >
+                                 <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div
+                                  class="card border-0 h-100 my-zoom"
+                                  style="border-radius: 10px !important"
+                                >
+                                <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                </div>
+                              </div>
+                               <div class="swiper-slide">
+                                <div
+                                  class="card border-0 h-100 my-zoom"
+                                  style="border-radius: 10px !important"
+                                >
+                                <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                </div>
+                              </div>
+                               <div class="swiper-slide">
+                                <div
+                                  class="card border-0 h-100 my-zoom"
+                                  style="border-radius: 10px !important"
+                                >
+                                <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                </div>
+                              </div>
+                               <div class="swiper-slide">
+                                <div
+                                  class="card border-0 h-100 my-zoom"
+                                  style="border-radius: 10px !important"
+                                >
+                                <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                </div>
+                              </div>
+                               <div class="swiper-slide">
+                                <div
+                                  class="card border-0 h-100 my-zoom"
+                                  style="border-radius: 10px !important"
+                                >
+                                <div style="height: 400px; width: 100%; background-color: #ccc; border-radius: 10px;"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                        </div>
                     </div>
 
@@ -2303,6 +2508,126 @@
     <!-- Page Overlay -->
     <div class="page-overlay"></div>
     <!-- /.page-overlay -->
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <script>
+        // Function to handle mobile responsiveness
+        function handleResponsive() {
+          if (window.innerWidth < 991) {
+            // Mobile or small screen
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next2",
+                prevEl: ".swiper-button-prev2",
+              },
+            });
+          } else if (window.innerWidth < 1024 && window.innerWidth > 991) {
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next2",
+                prevEl: ".swiper-button-prev2",
+              },
+            });
+          } else {
+            // Larger screens
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 3,
+              spaceBetween: 20,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next2",
+                prevEl: ".swiper-button-prev2",
+              },
+            });
+          }
+        }
+  
+        // event listener for screen size changes
+        window.addEventListener("resize", handleResponsive);
+  
+        //  event listener for orientation changes
+        window.addEventListener("orientationchange", handleResponsive);
+  
+        // handle responsiveness on page load
+        handleResponsive();
+      </script>
+
+    <script>
+        // Function to handle mobile responsiveness
+        function handleResponsive() {
+          if (window.innerWidth < 991) {
+            // Mobile or small screen
+            var swiper = new Swiper(".mySwiper2", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+              },
+              navigation: {
+                nextEl: ".swiper-button-nextt",
+                prevEl: ".swiper-button-prevv",
+              },
+            });
+          } else if (window.innerWidth < 1024 && window.innerWidth > 991) {
+            var swiper = new Swiper(".mySwiper2", {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+              },
+              navigation: {
+                nextEl: ".swiper-button-nextt",
+                prevEl: ".swiper-button-prevv",
+              },
+            });
+          } else {
+            // Larger screens
+            var swiper = new Swiper(".mySwiper2", {
+              slidesPerView: 3,
+              spaceBetween: 20,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+              },
+              navigation: {
+                nextEl: ".swiper-button-nextt",
+                prevEl: ".swiper-button-prevv",
+              },
+            });
+          }
+        }
+  
+        // event listener for screen size changes
+        window.addEventListener("resize", handleResponsive);
+  
+        //  event listener for orientation changes
+        window.addEventListener("orientationchange", handleResponsive);
+  
+        // handle responsiveness on page load
+        handleResponsive();
+      </script>
 
     <script>
         const IMAGE_SECTION = document.getElementById("image-section")
