@@ -97,6 +97,21 @@
   margin-bottom: 2em;
 }
 
+.event-benefit {
+  color: rgb(92, 91, 91);
+  margin: 0.5em 0;
+  margin-bottom: 2em;
+  font-size: medium;
+}
+
+.about-benefit {
+  color: rgb(92, 91, 91);
+  margin: 0.5em 0;
+  margin-bottom: 2em;
+  font-size: 16px;
+}
+
+
 .btn-donate {
   background-color: green;
   border: 2px solid green;
