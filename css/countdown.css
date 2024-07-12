@@ -13,7 +13,7 @@
   justify-content: center;
 
   span.main-count {
-    font-size: 3rem;
+    font-size: 7rem;
     font-weight: bold;
     line-height: 1cap;
   }
@@ -22,4 +22,9 @@
     font-size: 13px;
     display: block;
   }
+}
+
+
+.tx-green {
+  color: #41ff4a;
 }
