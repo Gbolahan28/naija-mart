@@ -1,0 +1,25 @@
+.countdown {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.timer {
+  display: flex;
+  column-gap: 40px;
+  row-gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  span.main-count {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1cap;
+  }
+
+  span.count-text {
+    font-size: 13px;
+    display: block;
+  }
+}
