@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../assets/new/Favicon NaijaMart.png" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/charity-auth.css" type="text/css" />
+
+    <title>Naijamart Charity || Register</title>
+</head>
+
+<body>
+    <main class="charity-auth">
+        <section class="container">
+            <div class="row" style="position: sticky; top: 0">
+                <div class="col-xl-7 col-lg-6 col-12">
+                    <div class="auth-content-side">
+                        <div class="col-xxl-6 col-xl-8 col-lg-11 col-md-8 col-sm-9 col-11 mx-auto">
+                            <div class="auth-header">
+                                <div class="mb-3">
+                                    <img src="./assets/new/logo.png" style="width: 150px" alt="" />
+                                </div>
+                                <h2>Register</h2>
+                                <p>Enter details</p>
+                            </div>
+
+                            <div>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="title" class="d-block">Title</label>
+                                    <input type="text" name="title" id="title" class="form-control" />
+                                </div>
+                            
+                                <div class="mb-3">
+                                    <label for="first-name" class="d-block">First Name</label>
+                                    <input type="text" name="first-name" id="first-name" class="form-control" />
+                                </div>
+                            
+                                <div class="mb-3">
+                                    <label for="last-name" class="d-block">Last Name</label>
+                                    <input type="text" name="last-name" id="last-name" class="form-control" />
+                                </div>
+                            
+                                <div class="mb-3">
+                                    <label for="email" class="d-block">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control" />
+                                </div>
+                            
+                                <div class="mb-3">
+                                    <label for="phone" class="d-block">Phone Number</label>
+                                    <input type="number" name="phone" id="phone" class="form-control" />
+                                </div>
+                            
+                                <div class="mb-3">
+                                    <label for="dietary-allergies" class="d-block">Dietary Allergies</label>
+                                    <select name="dietary-allergies" id="dietary-allergies" class="form-control" onchange="toggleTextArea()">
+                                        <option value="no">No</option>
+                                        <option value="yes">Yes</option>
+                                    </select>
+                                </div>
+                            
+                                <div class="mb-3" id="allergies-details" style="display: none;">
+                                    <label for="allergies-details-text" class="d-block">Please specify your dietary allergies</label>
+                                    <textarea name="allergies-details-text" id="allergies-details-text" class="form-control" rows="4"></textarea>
+                                </div>
+                            
+                                <div class="mb-3">
+                                    <button type="submit" class="submit-btn">Register</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-5 d-none d-lg-block">
+                    <div class="auth-bg-side">
+                        <div class="auth-bg-side-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/plugins/jquery.min.js"></script>
+    <script src="js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="js/plugins/bootstrap-slider.min.js"></script>
+    <!-- <script src="js/plugins/jquery.waypoints.min.js"></script> -->
+    <!-- <script src="js/plugins/sticky.min.js"></script> -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <script src="js/plugins/countdown.js"></script>
+
+<script>
+    function toggleTextArea() {
+        var dietaryAllergies = document.getElementById('dietary-allergies').value;
+        var allergiesDetails = document.getElementById('allergies-details');
+        if (dietaryAllergies === 'yes') {
+            allergiesDetails.style.display = 'block';
+        } else {
+            allergiesDetails.style.display = 'none';
+        }
+    }
+</script>
+
+    <!-- Footer Scripts -->
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
